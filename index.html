@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Meu Controle Financeiro</h1>
+        <p>Aplicativo simples para controlar gastos, receitas e investimentos.</p>
+
+<h2>Resumo Financeiro</h2>
+
+<div class="dashboard">
+<button id="limpar-dados" style="background-color:#e74c3c;">
+    Limpar todos os dados
+</button>
+
+    <div class="card receita">
+        <h3>Receitas</h3>
+        <p id="total-receitas">R$ 0,00</p>
+    </div>
+
+    <div class="card gasto">
+        <h3>Gastos</h3>
+        <p id="total-gastos">R$ 0,00</p>
+    </div>
+
+    <div class="card saldo">
+        <h3>Saldo</h3>
+        <p id="saldo">R$ 0,00</p>
+    </div>
+</div>
+
+<h2>Lançamento Financeiro</h2>
+
+<form id="form-lancamento">
+
+    <label>Tipo</label><br>
+    <select id="tipo">
+        <option value="receita">Receita</option>
+        <option value="gasto">Gasto</option>
+    </select>
+    <br><br>
+
+    <label>Descrição</label><br>
+    <input type="text" id="descricao" placeholder="Ex: Salário, Aluguel">
+    <br><br>
+
+    <label>Valor (R$)</label><br>
+    <input type="number" id="valor" placeholder="0.00">
+    <br><br>
+
+    <button type="submit">Adicionar</button>
+
+</form>
+<h2>Lançamentos</h2>
+
+<ul id="lista-lancamentos"></ul>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
